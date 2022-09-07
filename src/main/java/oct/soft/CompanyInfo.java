@@ -37,6 +37,26 @@ public class CompanyInfo {
     private boolean statusSplitTVA;
     private String iban;
     private boolean statusRO_e_Factura;
+    private String sdenumire_Strada;
+	private String snumar_Strada;
+	private String sdenumire_Localitate;
+	private String scod_Localitate;
+	private String sdenumire_Judet;
+	private String scod_Judet;
+	private String stara;
+	private String sdetalii_Adresa;
+	private String scod_Postal;
+	private String ddenumire_Strada;
+	private String dnumar_Strada;
+	private String ddenumire_Localitate;
+	private String dcod_Localitate;
+	private String ddenumire_Judet;
+	private String dcod_Judet;
+	private String dtara;
+	private String ddetalii_Adresa;
+	private String dcod_Postal;
+	private String data_inregistrare;
+	private String cod_CAEN;
 
     // Getter Methods
     public int getCui() {
@@ -271,13 +291,192 @@ public class CompanyInfo {
     public void setStare_inregistrare(String stare_inregistrare) {
         this.stare_inregistrare = stare_inregistrare;
     }
+   
+    public String getSdenumire_Strada() {
+		return sdenumire_Strada;
+	}
+
+	public void setSdenumire_Strada(String sdenumire_Strada) {
+		this.sdenumire_Strada = sdenumire_Strada;
+	}
+
+	public String getSnumar_Strada() {
+		return snumar_Strada;
+	}
+
+	public void setSnumar_Strada(String snumar_Strada) {
+		this.snumar_Strada = snumar_Strada;
+	}
+
+	public String getSdenumire_Localitate() {
+		return sdenumire_Localitate;
+	}
+
+	public void setSdenumire_Localitate(String sdenumire_Localitate) {
+		this.sdenumire_Localitate = sdenumire_Localitate;
+	}
+
+	public String getScod_Localitate() {
+		return scod_Localitate;
+	}
+
+	public void setScod_Localitate(String scod_Localitate) {
+		this.scod_Localitate = scod_Localitate;
+	}
+
+	public String getSdenumire_Judet() {
+		return sdenumire_Judet;
+	}
+
+	public void setSdenumire_Judet(String sdenumire_Judet) {
+		this.sdenumire_Judet = sdenumire_Judet;
+	}
+
+	public String getScod_Judet() {
+		return scod_Judet;
+	}
+
+	public void setScod_Judet(String scod_Judet) {
+		this.scod_Judet = scod_Judet;
+	}
+
+	public String getStara() {
+		return stara;
+	}
+
+	public void setStara(String stara) {
+		this.stara = stara;
+	}
+
+	public String getSdetalii_Adresa() {
+		return sdetalii_Adresa;
+	}
+
+	public void setSdetalii_Adresa(String sdetalii_Adresa) {
+		this.sdetalii_Adresa = sdetalii_Adresa;
+	}
+
+	public String getScod_Postal() {
+		return scod_Postal;
+	}
+
+	public void setScod_Postal(String scod_Postal) {
+		this.scod_Postal = scod_Postal;
+	}
+
+	public String getDdenumire_Strada() {
+		return ddenumire_Strada;
+	}
+
+	public void setDdenumire_Strada(String ddenumire_Strada) {
+		this.ddenumire_Strada = ddenumire_Strada;
+	}
+
+	public String getDnumar_Strada() {
+		return dnumar_Strada;
+	}
+
+	public void setDnumar_Strada(String dnumar_Strada) {
+		this.dnumar_Strada = dnumar_Strada;
+	}
+
+	public String getDdenumire_Localitate() {
+		return ddenumire_Localitate;
+	}
+
+	public void setDdenumire_Localitate(String ddenumire_Localitate) {
+		this.ddenumire_Localitate = ddenumire_Localitate;
+	}
+
+	public String getDcod_Localitate() {
+		return dcod_Localitate;
+	}
+
+	public void setDcod_Localitate(String dcod_Localitate) {
+		this.dcod_Localitate = dcod_Localitate;
+	}
+
+	public String getDdenumire_Judet() {
+		return ddenumire_Judet;
+	}
+
+	public void setDdenumire_Judet(String ddenumire_Judet) {
+		this.ddenumire_Judet = ddenumire_Judet;
+	}
+
+	public String getDcod_Judet() {
+		return dcod_Judet;
+	}
+
+	public void setDcod_Judet(String dcod_Judet) {
+		this.dcod_Judet = dcod_Judet;
+	}
+
+	public String getDtara() {
+		return dtara;
+	}
+
+	public void setDtara(String dtara) {
+		this.dtara = dtara;
+	}
+
+	public String getDdetalii_Adresa() {
+		return ddetalii_Adresa;
+	}
+
+	public void setDdetalii_Adresa(String ddetalii_Adresa) {
+		this.ddetalii_Adresa = ddetalii_Adresa;
+	}
+
+	public String getDcod_Postal() {
+		return dcod_Postal;
+	}
+
+	public void setDcod_Postal(String dcod_Postal) {
+		this.dcod_Postal = dcod_Postal;
+	}
+
+	public String getData_inregistrare() {
+		return data_inregistrare;
+	}
+
+	public void setData_inregistrare(String data_inregistrare) {
+		this.data_inregistrare = data_inregistrare;
+	}
+
+	public String getCod_CAEN() {
+		return cod_CAEN;
+	}
+
+	public void setCod_CAEN(String cod_CAEN) {
+		this.cod_CAEN = cod_CAEN;
+	}
 
     @Override
-    public String toString() {
-        return "CompanyInfo{" + "cui=" + cui + ", data=" + data + ", denumire=" + denumire + ", adresa=" + adresa + ", nrRegCom=" + nrRegCom + ", telefon=" + telefon + ", codPostal=" + codPostal + ", stare_inregistrare=" + stare_inregistrare + ", scpTVA=" + scpTVA + ", data_inceput_ScpTVA=" + data_inceput_ScpTVA + ", data_sfarsit_ScpTVA=" + data_sfarsit_ScpTVA + ", data_anul_imp_ScpTVA=" + data_anul_imp_ScpTVA + ", mesaj_ScpTVA=" + mesaj_ScpTVA + ", dataInceputTvaInc=" + dataInceputTvaInc + ", dataSfarsitTvaInc=" + dataSfarsitTvaInc + ", dataActualizareTvaInc=" + dataActualizareTvaInc + ", dataPublicareTvaInc=" + dataPublicareTvaInc + ", tipActTvaInc=" + tipActTvaInc + ", statusTvaIncasare=" + statusTvaIncasare + ", dataInactivare=" + dataInactivare + ", dataReactivare=" + dataReactivare + ", dataPublicare=" + dataPublicare + ", dataRadiere=" + dataRadiere + ", statusInactivi=" + statusInactivi + ", dataInceputSplitTVA=" + dataInceputSplitTVA + ", dataAnulareSplitTVA=" + dataAnulareSplitTVA + ", statusSplitTVA=" + statusSplitTVA + ", iban=" + iban + ", statusRO_e_Factura=" + statusRO_e_Factura + '}';
-    }
-  
-    public List<Object> getValues() {
+	public String toString() {
+		return "CompanyInfo [cui=" + cui + ", data=" + data + ", denumire=" + denumire + ", adresa=" + adresa
+				+ ", nrRegCom=" + nrRegCom + ", telefon=" + telefon + ", codPostal=" + codPostal
+				+ ", stare_inregistrare=" + stare_inregistrare + ", scpTVA=" + scpTVA + ", data_inceput_ScpTVA="
+				+ data_inceput_ScpTVA + ", data_sfarsit_ScpTVA=" + data_sfarsit_ScpTVA + ", data_anul_imp_ScpTVA="
+				+ data_anul_imp_ScpTVA + ", mesaj_ScpTVA=" + mesaj_ScpTVA + ", dataInceputTvaInc=" + dataInceputTvaInc
+				+ ", dataSfarsitTvaInc=" + dataSfarsitTvaInc + ", dataActualizareTvaInc=" + dataActualizareTvaInc
+				+ ", dataPublicareTvaInc=" + dataPublicareTvaInc + ", tipActTvaInc=" + tipActTvaInc
+				+ ", statusTvaIncasare=" + statusTvaIncasare + ", dataInactivare=" + dataInactivare
+				+ ", dataReactivare=" + dataReactivare + ", dataPublicare=" + dataPublicare + ", dataRadiere="
+				+ dataRadiere + ", statusInactivi=" + statusInactivi + ", dataInceputSplitTVA=" + dataInceputSplitTVA
+				+ ", dataAnulareSplitTVA=" + dataAnulareSplitTVA + ", statusSplitTVA=" + statusSplitTVA + ", iban="
+				+ iban + ", statusRO_e_Factura=" + statusRO_e_Factura + ", sdenumire_Strada=" + sdenumire_Strada
+				+ ", snumar_Strada=" + snumar_Strada + ", sdenumire_Localitate=" + sdenumire_Localitate
+				+ ", scod_Localitate=" + scod_Localitate + ", sdenumire_Judet=" + sdenumire_Judet + ", scod_Judet="
+				+ scod_Judet + ", stara=" + stara + ", sdetalii_Adresa=" + sdetalii_Adresa + ", scod_Postal="
+				+ scod_Postal + ", ddenumire_Strada=" + ddenumire_Strada + ", dnumar_Strada=" + dnumar_Strada
+				+ ", ddenumire_Localitate=" + ddenumire_Localitate + ", dcod_Localitate=" + dcod_Localitate
+				+ ", ddenumire_Judet=" + ddenumire_Judet + ", dcod_Judet=" + dcod_Judet + ", dtara=" + dtara
+				+ ", ddetalii_Adresa=" + ddetalii_Adresa + ", dcod_Postal=" + dcod_Postal + ", data_inregistrare="
+				+ data_inregistrare + ", cod_CAEN=" + cod_CAEN + "]";
+	}
+
+	public List<Object> getValues() {
         return Arrays.asList(getCui(),
                 getData(),
                 getDenumire(),                
@@ -306,7 +505,27 @@ public class CompanyInfo {
                 getDataAnulareSplitTVA(),
                 getStatusSplitTVA()?"DA":"NU",
                 getIban(),
-                getStatusRO_e_Factura()?"DA":"NU"
+                getStatusRO_e_Factura()?"DA":"NU",
+                getSdenumire_Strada(),
+                getSnumar_Strada(),
+                getSdenumire_Localitate(),
+                getScod_Localitate(),
+                getSdenumire_Judet(),
+                getScod_Judet(),
+                getStara(),
+                getSdetalii_Adresa(),
+                getScod_Postal(),
+                getDdenumire_Strada(),
+                getDnumar_Strada(),
+                getDdenumire_Localitate(),
+                getDcod_Localitate(),
+                getDdenumire_Judet(),
+                getDcod_Judet(),
+                getDtara(),
+                getDdetalii_Adresa(),
+                getDcod_Postal(),
+                getData_inregistrare(),
+                getCod_CAEN()
         );
     }
     
@@ -318,7 +537,7 @@ public class CompanyInfo {
                 .append("<html><head><meta charset='utf-8'><title>Verificare Agent economic ").append(getDenumire()).append("</title></head>")
                 .append("<body>")*/
                 .append("<h2>Rezultat</h2>")
-                .append("<table class=\"table table-success table-striped table-hover\">")
+                .append("<table class=\"table table-success table-striped table-hover\" id=\"tblData\">")
                 .append("<tr><td>CUI:</td><td>").append(getCui()).append("</td></tr>")
                  .append("<tr><td>Data pt. care se efectueaza cautarea:</td><td><strong>").append(getData()).append("</td></tr>")
                  .append("<tr><td>Denumire:</td><td>").append(getDenumire()).append("</strong></td></tr>")
@@ -369,6 +588,46 @@ public class CompanyInfo {
                         getIban()).append("</strong></td></tr>")
                   .append("<tr><td>Figureaza in Registrul RO e-Factura:</td><td><strong>").append(
                         getStatusRO_e_Factura()?"DA":"NU").append("</strong></td></tr>")
+                  .append("<tr><td>Denumire strada sediu:</td><td><strong>").append(
+                		  getSdenumire_Strada()).append("</strong></td></tr>")
+                  .append("<tr><td>Numar strada sediu:</td><td><strong>").append(
+                		  getSnumar_Strada()).append("</strong></td></tr>")
+                  .append("<tr><td>Denumire localitate sediu:</td><td><strong>").append(
+                		  getSdenumire_Localitate()).append("</strong></td></tr>")
+                  .append("<tr><td>Cod localitate sediu:</td><td><strong>").append(
+                		  getScod_Localitate()).append("</strong></td></tr>")
+                  .append("<tr><td>Denumire judet sediu:</td><td><strong>").append(
+                		  getSdenumire_Judet()).append("</strong></td></tr>")
+                  .append("<tr><td>Cod judet sediu:</td><td><strong>").append(
+                		  getScod_Judet()).append("</strong></td></tr>")
+                  .append("<tr><td>Denumire tara sediu:</td><td><strong>").append(
+                		  getStara()).append("</strong></td></tr>")
+                  .append("<tr><td>Detalii adresa sediu:</td><td><strong>").append(
+                		  getSdetalii_Adresa()).append("</strong></td></tr>")
+                  .append("<tr><td>Cod postal sediu:</td><td><strong>").append(
+                		  getScod_Postal()).append("</strong></td></tr>")
+                  .append("<tr><td>Denumire strada domiciliu fiscal:</td><td><strong>").append(
+                		  getDdenumire_Strada()).append("</strong></td></tr>")
+                  .append("<tr><td>Numar strada domiciliu fiscal:</td><td><strong>").append(
+                		  getDnumar_Strada()).append("</strong></td></tr>")
+                  .append("<tr><td>Denumire localitate domiciliu fiscal:</td><td><strong>").append(
+                		  getDdenumire_Localitate()).append("</strong></td></tr>")
+                  .append("<tr><td>Cod localitate domiciliu fiscal:</td><td><strong>").append(
+                		  getDcod_Localitate()).append("</strong></td></tr>")
+                  .append("<tr><td>Denumire judet domiciliu fiscal:</td><td><strong>").append(
+                		  getDdenumire_Judet()).append("</strong></td></tr>")
+                  .append("<tr><td>Cod judet domiciliu fiscal:</td><td><strong>").append(
+                		  getDcod_Judet()).append("</strong></td></tr>")
+                  .append("<tr><td>Denumire tara domiciliu fiscal:</td><td><strong>").append(
+                		  getDtara()).append("</strong></td></tr>")
+                  .append("<tr><td>Detalii adresa domiciliu fiscal:</td><td><strong>").append(
+                		  getDdetalii_Adresa()).append("</strong></td></tr>")
+                  .append("<tr><td>Cod postal domiciliu fiscal:</td><td><strong>").append(
+                		  getDcod_Postal()).append("</strong></td></tr>")
+                  .append("<tr><td>Data inregistrare:</td><td><strong>").append(
+                		  getData_inregistrare()).append("</strong></td></tr>")
+                  .append("<tr><td>Cod CAEN:</td><td><strong>").append(
+                		  getCod_CAEN()).append("</strong></td></tr>")
                 .append("</table>")
                /* .append("</body></html>")*/;
         return sb.toString();

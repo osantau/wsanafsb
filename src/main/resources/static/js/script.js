@@ -15,6 +15,7 @@ function checkAnaf() {
 				})
 				.then(response => response.json())
 				.then(data => {
+				  document.getElementById("btnExportExcel").removeAttribute("hidden");
 				  document.getElementById("htmlInfo").innerHTML = data.htmlInfo;
 				  document.getElementById("htmlInfo").scrollIntoView();
 				})
@@ -54,3 +55,11 @@ function checkAnaf() {
 				progressBar.style="width: "+value+"%";
 				progressBar.innerHTML = value+"%";
 			}
+			
+	function exportToExcel() {
+		$("#tblData").table2excel({
+			filename: "rezultat.xlsx",
+			filext: ".xlsx",
+			preserveColors: false
+		});
+	}
